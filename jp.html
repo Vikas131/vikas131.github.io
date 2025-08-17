@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ - Your Name</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow p-6 sticky top-0">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Your Name</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:text-blue-600">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-4xl mx-auto text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">こんにちは、Your Nameです 👋</h2>
+    <p class="text-lg text-gray-600">データエンジニア | AWS | GCP | Python | SQL</p>
+    <a href="resume.pdf" target="_blank" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700">履歴書ダウンロード</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto py-12">
+    <h3 class="text-2xl font-bold mb-4">自己紹介</h3>
+    <p class="text-gray-700">
+      データエンジニアとして、スケーラブルなETLパイプラインの構築、大規模データ処理の最適化、クラウド環境（AWS、GCP、Azure）での開発に取り組んできました。
+      生データを価値あるインサイトに変えることに情熱を持っています。
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="max-w-4xl mx-auto py-12">
+    <h3 class="text-2xl font-bold mb-4">職務経歴</h3>
+    <div class="space-y-6">
+      <div>
+        <h4 class="text-xl font-semibold">データエンジニア — 会社名</h4>
+        <p class="text-gray-600">2021年1月 – 現在</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>数百万件規模のデータを扱うETLパイプラインを設計・運用</li>
+          <li>SQLクエリを最適化し、処理時間を40%削減</li>
+          <li>AWS (S3, Glue, Lambda, Redshift) を活用した分析基盤を構築</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-4xl mx-auto py-12">
+    <h3 class="text-2xl font-bold mb-4">プロジェクト</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h4 class="font-semibold">US EV Data – AWS ETL プロジェクト</h4>
+        <p class="text-gray-600">Airflow、Lambda、PostgreSQL を用いて米国のEV導入状況を分析するETLパイプラインを構築しました。</p>
+        <a href="https://github.com/yourusername/ev-data-etl" class="text-blue-600 hover:underline">プロジェクトを見る</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h4 class="font-semibold">Flinkによるストリーミング解析</h4>
+        <p class="text-gray-600">Apache Flink + Kafka + PostgreSQL を用いてWebトラフィックのリアルタイムセッション化を実装しました。</p>
+        <a href="https://github.com/yourusername/flink-streaming" class="text-blue-600 hover:underline">プロジェクトを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto py-12 text-center">
+    <h3 class="text-2xl font-bold mb-4">お問い合わせ</h3>
+    <p class="text-gray-700">📧 your.email@example.com</p>
+    <p class="text-gray-700">💼 <a href="https://linkedin.com/in/yourprofile" class="text-blue-600 hover:underline">LinkedIn</a></p>
+    <p class="text-gray-700">🐙 <a href="https://github.com/yourusername" class="text-blue-600 hover:underline">GitHub</a></p>
+  </section>
+
+  <footer class="bg-gray-100 py-6 text-center text-gray-600 mt-12">
+    © 2025 Your Name. All rights reserved.
+  </footer>
+</body>
+</html>
