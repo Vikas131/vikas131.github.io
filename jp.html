@@ -16,13 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
   </head>
-  <body class="bg-[#ECEEDF] text-gray-900 font-cs">
+  <body class="bg-[#ECEEDF] text-gray-900">
     <!-- Header -->
-    <header class="bg-[#B19279] shadow p-6 sticky top-0">
-      <div class="max-w-5xl mx-auto flex justify-end">
-        <!-- <h1 class="text-xl font-bold">Your Name</h1> -->
+    <header class="bg-[#B19279] shadow p-4 md:p-6 sticky top-0">
+      <div class="max-w-5xl mx-auto flex justify-center :justify-end">
+        <!-- <h1 class="text-lg md:text-xl font-bold">Your Name</h1> -->
         <nav
-          class="text-white text-xl space-x-6 flex justify-center items-center"
+          class="text-white text-base md:text-lg md:text-lg md:text-xl space-x-3 sm:space-x-4 md:space-x-6 flex justify-center items-center"
         >
           <a
             href="#about"
@@ -48,329 +48,340 @@
             href="index.html"
             class="flex items-center gap-2 px-3 py-1 rounded bg-white text-stone-900 font-medium shadow hover:bg-yellow-100 transition"
           >
-            <span>English</span>
+            <span class="hidden md:inline">English</span>
             <span class="material-symbols-outlined"> translate </span>
           </a>
         </nav>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="max-w-5xl mx-auto text-center py-20">
-      <div class="flex justify-between items-center content-center">
-        <div class="max-w-xl text-left">
-          <h2 class="text-4xl font-bold mb-4">
-            こんにちは、<span class="text-[#8975B0]">ヴィカスです.</span>
-          </h2>
-          <p class="text-xl text-stone-900">
-            <!-- <span>Data Engineer</span> | <span>AWS</span> | <span>GCP</span> |
+    <div class="max-w-5xl mx-auto px-6">
+      <!-- Hero Section -->
+      <section class="text-center py-16 md:py-20">
+        <div
+          class="flex flex-col md:flex-row space-y-6 md:space-y-0 items-center content-center"
+        >
+          <div class="max-w-xl text-center md:text-left">
+            <h2 class="text-3xl text-3xl md:text-4xl font-bold mb-4">
+              こんにちは、<span class="text-[#8975B0]">ヴィカスです.</span>
+            </h2>
+            <p class="text-lg md:text-xl text-stone-900">
+              <!-- <span>Data Engineer</span> | <span>AWS</span> | <span>GCP</span> |
             <span>Python</span> | <span>SQL</span> -->
-            AWS、SQL、Linux
-            のスキルや運用業務で得た経験、英語・日本語のバイリンガル能力を活用し、データエンジニアとしてキャリアを築きたいです。
-            効率的で高速なデータシステムを構築し、成果を出すことに情熱を注いでいます。
-          </p>
-          <a
-            href="./assets/ヴィカス_職務経歴書.pdf"
-            target="_blank"
-            class="mt-6 inline-block text-[#70cad1] font-bold bg-transparent border-[#70cad1] border-2 px-6 py-2 rounded shadow hover:text-white hover:bg-[#70cad1]"
-            >履歴書はこちら</a
-          >
-        </div>
-        <div>
-          <img
-            src="./assets/profile_pic.jpg"
-            width="400"
-            height="400"
-            class="rounded-lg"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="max-w-5xl mx-auto py-12">
-      <h3 class="text-4xl font-bold mb-4">自己紹介</h3>
-      <p class="text-lg text-stone-900">
-        <span class="text-[#8975B0] font-bold">バイリンガルエンジニア</span
-        >として、信頼性が高く効率的なシステム運用に情熱を持っております。<span
-          class="text-[#8975B0] font-bold"
-          >AWS、SQL、Linux</span
-        >などの技術を活用し、課題の解決や業務の自動化に取り組んでまいりました。
-        アプリケーション開発と運用保守の分野て4年以上の経験を有しており、現在は<span
-          class="text-[#8975B0] font-bold"
-          >データエンジニアリング</span
-        >分野へのキャリア転向を積極的に進めております。
-      </p>
-      <p class="text-lg text-stone-900">
-        現職では、データに関する問題の調査、根本原因分析を行い、データ品質の不具合、整合性といった課題の解決に取り組んでいます。
-        C#（.NET）を用いた業務ツールの開発に携わり、徐々に<span
-          class="text-[#8975B0] font-bold"
-          >クラウドやデータ基盤の分野</span
-        >へシフトしてきました。
-        現在は、作業手順の自動化やパイプラインの最適化などに取り組みながら、より効率的で信頼性の高いシステムづくりに貢献できるデータエンジニアリングの実務に積極的に取り組んでいきます。
-      </p>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="max-w-5xl mx-auto py-12">
-      <h3 class="text-4xl font-bold mb-4">経歴</h3>
-      <div class="space-y-6">
-        <div>
-          <h4 class="text-xl font-semibold">
-            Data Engineer (L2 Support) — TCS Japan
-          </h4>
-          <p class="text-stone-600 italic">2024年10月 – 現在</p>
-          <ul class="list-disc list-inside text-stone-900">
-            <li>
-              製薬企業の<span class="text-[#8975B0] font-bold"
-                >AWS クラウド環境</span
-              >におけるデータ処理パイプラインで発生した障害やエラーに対応し、安定稼働を支援。
-            </li>
-            <li>
-              <span class="text-[#8975B0] font-bold">担当者変更、製品登録</span
-              >など、製薬業界の重要な業務データイベントの管理と下流システムとの連携対応を実施。
-            </li>
-            <li>
-              データフローの問題に対する<span class="text-[#8975B0] font-bold"
-                >原因調査</span
-              >と他チームとの連携による対応の実施。
-            </li>
-            <li>
-              運用手順書を改善・管理し、業務の標準化やトラブル対応、チーム間の連携とナレッジ共有を円滑にしています。
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold">
-            Production Support Engineer — TCS Japan
-          </h4>
-          <p class="text-stone-600 italic">2023年2月 – 2024年8月</p>
-          <ul class="list-disc list-inside text-stone-900">
-            <li>
-              <span class="text-[#8975B0] font-bold"
-                >日本トップクラスの証券会社</span
-              >で100以上のクリティカルな<span class="text-[#8975B0] font-bold"
-                >金融アプリケーションの運用を担当し</span
-              >、システムの信頼性、稼働率、サービス継続性を維持。
-            </li>
-            <li>
-              <span class="text-[#8975B0] font-bold">LinuxとSQL</span
-              >を活用し、障害発生時の技術的調査。本番環境への制御されたデプロイ支援、日常の運用業務に幅広く対応。
-            </li>
-            <li>
-              <span class="text-[#8975B0] font-bold">手動業務を自動化し</span
-              >、効率化と重要課題への集中を実現。
-            </li>
-            <li>
-              <span class="text-[#8975B0] font-bold">ServiceNow</span
-              >を活用したインシデント管理を担当し、影響度評価、根本原因分析、ドキュメント作成を通じて再発防止とシステム安定性の向上に貢献。
-            </li>
-            <li>
-              <span class="text-[#8975B0] font-bold"
-                >Grafana、Rivermuse、Splunk</span
-              >などの監視ツールでシステムを監視し、異常の早期検知、アラート設定の改善、運用ドキュメントの整備・ナレッジ共有を推進。
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold">System Engineer — TCS Japan</h4>
-          <p class="text-stone-600 italic">2022年06月 – 2023年01月</p>
-          <ul class="list-disc list-inside text-stone-900">
-            <li>
-              クライアント向けデモ用に<span class="text-[#8975B0] font-bold"
-                >Flutter</span
-              >を用いてサンプルモバイルアプリを設計・開発。
-            </li>
-            <li>
-              <span class="text-[#8975B0] font-bold"
-                >AngularとJava Spring Boot</span
-              >を使用してECサイトを構築。
-            </li>
-            <li>
-              AWSで実践経験を積み、独学でReactを習得し、レスポンシブなウェブアプリを開発。
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold">System Engineer — ITS Co.Ltd</h4>
-          <p class="text-stone-600 italic">2020年10月 – 2022年05月</p>
-          <ul class="list-disc list-inside text-stone-900">
-            <li>
-              大手電気機器メーカーの営業業務の見積作成・実績・顧客情報を一元管理する原価見積システムを、<span
-                class="text-[#8975B0] font-bold"
-                >C# (.NET)</span
-              >
-              を用いて提案から開発・導入まで担当。
-            </li>
-            <li>
-              <span class="text-[#8975B0] font-bold"
-                >C#（.NET）とSQL Server</span
-              >を用いて、商品の生産から納品後までの情報とメンテナンス管理を行うシステムを開発・導入。
-            </li>
-            <li>
-              食品会社の納品後の食品種類ごとに情報管理システムのデザイン作成。
-            </li>
-            <li>
-              工業用クリーンルームの天井で使用されるFFUのメンテナンス管理のためのシステムを設計・開発。
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="max-w-5xl mx-auto py-12">
-      <h3 class="text-4xl font-bold mb-4">個人プロジェクト</h3>
-      <div class="grid md:grid-cols-2 gap-12">
-        <div
-          class="flex flex-col justify-between bg-white p-6 space-y-4 shadow rounded-md"
-        >
-          <div class="space-y-4">
-            <h4 class="font-bold text-lg">US EV Data – AWS ETL Project</h4>
-            <p class="text-stone-600">
-              <span class="text-[#8975B0] font-bold"
-                >AWS Step Function、Lambda、RDS</span
-              >
-              を活用してAWS データパイプラインを構築し、EV
-              データセットを収集・加工・格納。米国の電気自動車データの分析に活用。
+              AWS、SQL、Linux
+              のスキルや運用業務で得た経験、英語・日本語のバイリンガル能力を活用し、データエンジニアとしてキャリアを築きたいです。
+              効率的で高速なデータシステムを構築し、成果を出すことに情熱を注いでいます。
             </p>
-          </div>
-          <a
-            href="https://github.com/Vikas131/Data-Engineering-Projects/tree/main/AWS-Project"
-            class="text-[#70cad1] font-bold hover:underline underline-offset-4"
-            >プロジェクト詳細</a
-          >
-        </div>
-        <div
-          class="flex flex-col justify-between bg-white p-6 space-y-4 shadow rounded-md"
-        >
-          <div class="space-y-4">
-            <h4 class="font-bold text-lg">Weather Data ETL project</h4>
-            <p class="text-stone-600">
-              <span class="text-[#8975B0] font-bold"
-                >Airflow、dbt、PostgreSQL</span
-              >
-              を用いた ETL
-              パイプラインを構築し、生データを格納・整形・集計して分析用モデルを作成。ワークフローは
-              Airflow で自動化・監視し、パイプライン全体は
-              <span class="text-[#8975B0] font-bold">Docker</span>
-              上でコンテナ化して実行。<span class="text-[#8975B0] font-bold"
-                >Superset</span
-              >
-              でダッシュボードを作成し、日次・過去の天気傾向を可視化。
-            </p>
-          </div>
-          <a
-            href="https://github.com/Vikas131/Data-Engineering-Projects/tree/main/Weather_data_ETL_project"
-            class="text-[#70cad1] font-bold hover:underline underline-offset-4"
-            >プロジェクト詳細</a
-          >
-        </div>
-        <div class="bg-white p-6 space-y-4 shadow rounded-md">
-          <h4 class="font-bold text-lg">Data Analysis Projects</h4>
-          <p class="text-stone-600">
-            <span class="text-[#8975B0] font-bold"
-              >Python、Pandas、Matplotlib、Seaborn、Plotly</span
+            <a
+              href="./assets/ヴィカス_職務経歴書.pdf"
+              target="_blank"
+              class="mt-6 inline-block text-[#70cad1] font-bold bg-transparent border-[#70cad1] border-2 px-6 py-2 rounded shadow hover:text-white hover:bg-[#70cad1]"
+              >履歴書はこちら</a
             >
-            を用いて、株式分析、映画データ分析、売上データ分析の3つのプロジェクトを開発。Yahoo
-            Finance
-            などのAPIからリアルタイムデータを取得し、分析と可視化を通じて実用的なインサイトを抽出。
-          </p>
-          <a
-            href="https://github.com/Vikas131/Data_Analysis/tree/main/Python_Data_Analysis_Projects"
-            class="text-[#70cad1] font-bold hover:underline underline-offset-4"
-            >プロジェクト詳細</a
+          </div>
+          <div>
+            <img
+              src="./assets/profile_pic.jpg"
+              width="400"
+              height="400"
+              class="rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="py-8 md:py-12">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">自己紹介</h3>
+        <p class="text-lg text-stone-900">
+          <span class="text-[#8975B0] font-bold">バイリンガルエンジニア</span
+          >として、信頼性が高く効率的なシステム運用に情熱を持っております。<span
+            class="text-[#8975B0] font-bold"
+            >AWS、SQL、Linux</span
+          >などの技術を活用し、課題の解決や業務の自動化に取り組んでまいりました。
+          アプリケーション開発と運用保守の分野て4年以上の経験を有しており、現在は<span
+            class="text-[#8975B0] font-bold"
+            >データエンジニアリング</span
+          >分野へのキャリア転向を積極的に進めております。
+        </p>
+        <p class="text-lg text-stone-900">
+          現職では、データに関する問題の調査、根本原因分析を行い、データ品質の不具合、整合性といった課題の解決に取り組んでいます。
+          C#（.NET）を用いた業務ツールの開発に携わり、徐々に<span
+            class="text-[#8975B0] font-bold"
+            >クラウドやデータ基盤の分野</span
+          >へシフトしてきました。
+          現在は、作業手順の自動化やパイプラインの最適化などに取り組みながら、より効率的で信頼性の高いシステムづくりに貢献できるデータエンジニアリングの実務に積極的に取り組んでいきます。
+        </p>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="py-8 md:py-12">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">経歴</h3>
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-lg md:text-xl font-semibold">
+              Data Engineer (L2 Support) — TCS Japan
+            </h4>
+            <p class="text-stone-600 italic">2024年10月 – 現在</p>
+            <ul class="list-disc list-inside text-stone-900">
+              <li>
+                製薬企業の<span class="text-[#8975B0] font-bold"
+                  >AWS クラウド環境</span
+                >におけるデータ処理パイプラインで発生した障害やエラーに対応し、安定稼働を支援。
+              </li>
+              <li>
+                <span class="text-[#8975B0] font-bold"
+                  >担当者変更、製品登録</span
+                >など、製薬業界の重要な業務データイベントの管理と下流システムとの連携対応を実施。
+              </li>
+              <li>
+                データフローの問題に対する<span class="text-[#8975B0] font-bold"
+                  >原因調査</span
+                >と他チームとの連携による対応の実施。
+              </li>
+              <li>
+                運用手順書を改善・管理し、業務の標準化やトラブル対応、チーム間の連携とナレッジ共有を円滑にしています。
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg md:text-xl font-semibold">
+              Production Support Engineer — TCS Japan
+            </h4>
+            <p class="text-stone-600 italic">2023年2月 – 2024年8月</p>
+            <ul class="list-disc list-inside text-stone-900">
+              <li>
+                <span class="text-[#8975B0] font-bold"
+                  >日本トップクラスの証券会社</span
+                >で100以上のクリティカルな<span class="text-[#8975B0] font-bold"
+                  >金融アプリケーションの運用を担当し</span
+                >、システムの信頼性、稼働率、サービス継続性を維持。
+              </li>
+              <li>
+                <span class="text-[#8975B0] font-bold">LinuxとSQL</span
+                >を活用し、障害発生時の技術的調査。本番環境への制御されたデプロイ支援、日常の運用業務に幅広く対応。
+              </li>
+              <li>
+                <span class="text-[#8975B0] font-bold">手動業務を自動化し</span
+                >、効率化と重要課題への集中を実現。
+              </li>
+              <li>
+                <span class="text-[#8975B0] font-bold">ServiceNow</span
+                >を活用したインシデント管理を担当し、影響度評価、根本原因分析、ドキュメント作成を通じて再発防止とシステム安定性の向上に貢献。
+              </li>
+              <li>
+                <span class="text-[#8975B0] font-bold"
+                  >Grafana、Rivermuse、Splunk</span
+                >などの監視ツールでシステムを監視し、異常の早期検知、アラート設定の改善、運用ドキュメントの整備・ナレッジ共有を推進。
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg md:text-xl font-semibold">
+              System Engineer — TCS Japan
+            </h4>
+            <p class="text-stone-600 italic">2022年06月 – 2023年01月</p>
+            <ul class="list-disc list-inside text-stone-900">
+              <li>
+                クライアント向けデモ用に<span class="text-[#8975B0] font-bold"
+                  >Flutter</span
+                >を用いてサンプルモバイルアプリを設計・開発。
+              </li>
+              <li>
+                <span class="text-[#8975B0] font-bold"
+                  >AngularとJava Spring Boot</span
+                >を使用してECサイトを構築。
+              </li>
+              <li>
+                AWSで実践経験を積み、独学でReactを習得し、レスポンシブなウェブアプリを開発。
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg md:text-xl font-semibold">
+              System Engineer — ITS Co.Ltd
+            </h4>
+            <p class="text-stone-600 italic">2020年10月 – 2022年05月</p>
+            <ul class="list-disc list-inside text-stone-900">
+              <li>
+                大手電気機器メーカーの営業業務の見積作成・実績・顧客情報を一元管理する原価見積システムを、<span
+                  class="text-[#8975B0] font-bold"
+                  >C# (.NET)</span
+                >
+                を用いて提案から開発・導入まで担当。
+              </li>
+              <li>
+                <span class="text-[#8975B0] font-bold"
+                  >C#（.NET）とSQL Server</span
+                >を用いて、商品の生産から納品後までの情報とメンテナンス管理を行うシステムを開発・導入。
+              </li>
+              <li>
+                食品会社の納品後の食品種類ごとに情報管理システムのデザイン作成。
+              </li>
+              <li>
+                工業用クリーンルームの天井で使用されるFFUのメンテナンス管理のためのシステムを設計・開発。
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="py-8 md:py-12">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">個人プロジェクト</h3>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+          <div
+            class="flex flex-col justify-between bg-white p-6 space-y-4 shadow rounded-md"
           >
-        </div>
-      </div>
-    </section>
-
-    <!-- Certfications -->
-    <section id="experience" class="max-w-5xl mx-auto py-12">
-      <h3 class="text-4xl font-bold mb-4">資格</h3>
-      <div class="space-y-6">
-        <div>
-          <ul class="list-disc list-inside text-stone-900 text-l">
-            <li>
-              <span class="font-semibold">Data Engineering- DataExpert.io </span
-              >(2025年08月)
-            </li>
-            <li>
-              <span class="font-semibold">AWSクラウドプラクティショナー </span
-              >(2025年04月)
-            </li>
-
-            <li>
-              <span class="font-semibold">RHCSA 認定試験 (EX200) - REDHAT </span
-              >(2023年07月)
-            </li>
-            <li>
-              <span class="font-semibold">日本語能力試験2級(JLPT) </span
-              >(2021年07月)
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="experience" class="max-w-5xl mx-auto py-12">
-      <h3 class="text-4xl font-bold mb-4">テクニカルスキル</h3>
-      <div class="space-y-6">
-        <div>
-          <ul class="list-disc list-inside text-stone-900">
-            <li>
-              <span class="font-semibold">クラウドとデータツール:</span> AWS
-              Glue, Lambda, Step Functions, RDS, S3
-            </li>
-            <li>
-              <span class="font-semibold">プログラミング言語:</span>
-              Python, SQL (PostgreSQL, Oracle, MS SQL Server), Bash
-            </li>
-            <li>
-              <span class="font-semibold">プラットフォームと監視ツール:</span>
-              Linux, Grafana, Splunk, ServiceNow
-            </li>
-            <li><span class="font-semibold">その他:</span> Git, JIRA</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="max-w-5xl mx-auto py-12">
-      <h3 class="text-4xl font-bold mb-4">コンタクト</h3>
-      <div class="">
-        <div>
-          <ul class="text-stone-900 space-y-4">
-            <li class="text-xl flex items-center">
-              <!-- <span class="material-symbols-outlined pr-2"> mail </span> -->
-              <!-- <p class="pr-2 font-semibold">Email:</p> -->
-              📧
-              <a class="text-[#70cad1] font-semibold hover:underline pl-1">
-                vikassuvarna13@gmail.com</a
+            <div class="space-y-4">
+              <h4 class="font-bold text-lg">US EV Data – AWS ETL Project</h4>
+              <p class="text-stone-600">
+                <span class="text-[#8975B0] font-bold"
+                  >AWS Step Function、Lambda、RDS</span
+                >
+                を活用してAWS データパイプラインを構築し、EV
+                データセットを収集・加工・格納。米国の電気自動車データの分析に活用。
+              </p>
+            </div>
+            <a
+              href="https://github.com/Vikas131/Data-Engineering-Projects/tree/main/AWS-Project"
+              class="text-[#70cad1] font-bold hover:underline underline-offset-4"
+              >プロジェクト詳細</a
+            >
+          </div>
+          <div
+            class="flex flex-col justify-between bg-white p-6 space-y-4 shadow rounded-md"
+          >
+            <div class="space-y-4">
+              <h4 class="font-bold text-lg">Weather Data ETL project</h4>
+              <p class="text-stone-600">
+                <span class="text-[#8975B0] font-bold"
+                  >Airflow、dbt、PostgreSQL</span
+                >
+                を用いた ETL
+                パイプラインを構築し、生データを格納・整形・集計して分析用モデルを作成。ワークフローは
+                Airflow で自動化・監視し、パイプライン全体は
+                <span class="text-[#8975B0] font-bold">Docker</span>
+                上でコンテナ化して実行。<span class="text-[#8975B0] font-bold"
+                  >Superset</span
+                >
+                でダッシュボードを作成し、日次・過去の天気傾向を可視化。
+              </p>
+            </div>
+            <a
+              href="https://github.com/Vikas131/Data-Engineering-Projects/tree/main/Weather_data_ETL_project"
+              class="text-[#70cad1] font-bold hover:underline underline-offset-4"
+              >プロジェクト詳細</a
+            >
+          </div>
+          <div class="bg-white p-6 space-y-4 shadow rounded-md">
+            <h4 class="font-bold text-lg">Data Analysis Projects</h4>
+            <p class="text-stone-600">
+              <span class="text-[#8975B0] font-bold"
+                >Python、Pandas、Matplotlib、Seaborn、Plotly</span
               >
-            </li>
-            <li class="text-xl">
-              💼
-              <a
-                href="https://www.linkedin.com/in/vikas-suvarna-kumar/"
-                class="text-[#70cad1] font-semibold hover:underline"
-                >LinkedIn</a
-              >
-            </li>
-            <li class="text-xl">
-              🐙
-              <a
-                href="https://github.com/Vikas131"
-                class="text-[#70cad1] font-semibold hover:underline"
-                >GitHub</a
-              >
-            </li>
-          </ul>
+              を用いて、株式分析、映画データ分析、売上データ分析の3つのプロジェクトを開発。Yahoo
+              Finance
+              などのAPIからリアルタイムデータを取得し、分析と可視化を通じて実用的なインサイトを抽出。
+            </p>
+            <a
+              href="https://github.com/Vikas131/Data_Analysis/tree/main/Python_Data_Analysis_Projects"
+              class="text-[#70cad1] font-bold hover:underline underline-offset-4"
+              >プロジェクト詳細</a
+            >
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Certfications -->
+      <section id="experience" class="py-8 md:py-12">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">資格</h3>
+        <div class="space-y-6">
+          <div>
+            <ul class="list-disc list-inside text-stone-900 text-l">
+              <li>
+                <span class="font-semibold"
+                  >Data Engineering- DataExpert.io </span
+                >(2025年08月)
+              </li>
+              <li>
+                <span class="font-semibold">AWSクラウドプラクティショナー </span
+                >(2025年04月)
+              </li>
+
+              <li>
+                <span class="font-semibold"
+                  >RHCSA 認定試験 (EX200) - REDHAT </span
+                >(2023年07月)
+              </li>
+              <li>
+                <span class="font-semibold">日本語能力試験2級(JLPT) </span
+                >(2021年07月)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="experience" class="py-8 md:py-12">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">テクニカルスキル</h3>
+        <div class="space-y-6">
+          <div>
+            <ul class="list-disc list-inside text-stone-900">
+              <li>
+                <span class="font-semibold">クラウドとデータツール:</span> AWS
+                Glue, Lambda, Step Functions, RDS, S3
+              </li>
+              <li>
+                <span class="font-semibold">プログラミング言語:</span>
+                Python, SQL (PostgreSQL, Oracle, MS SQL Server), Bash
+              </li>
+              <li>
+                <span class="font-semibold">プラットフォームと監視ツール:</span>
+                Linux, Grafana, Splunk, ServiceNow
+              </li>
+              <li><span class="font-semibold">その他:</span> Git, JIRA</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-8 md:py-12">
+        <h3 class="text-3xl md:text-4xl font-bold mb-4">コンタクト</h3>
+        <div class="">
+          <div>
+            <ul class="text-stone-900 space-y-4">
+              <li class="text-lg md:text-xl flex items-center">
+                <!-- <span class="material-symbols-outlined pr-2"> mail </span> -->
+                <!-- <p class="pr-2 font-semibold">Email:</p> -->
+                📧
+                <a class="text-[#70cad1] font-semibold hover:underline pl-1">
+                  vikassuvarna13@gmail.com</a
+                >
+              </li>
+              <li class="text-lg md:text-xl">
+                💼
+                <a
+                  href="https://www.linkedin.com/in/vikas-suvarna-kumar/"
+                  class="text-[#70cad1] font-semibold hover:underline"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="text-lg md:text-xl">
+                🐙
+                <a
+                  href="https://github.com/Vikas131"
+                  class="text-[#70cad1] font-semibold hover:underline"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <footer
       class="bg-yellow-100 py-6 text-center text-stone-900 text-lg font-bold mt-12 shadow"
