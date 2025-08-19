@@ -1,83 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-50 text-gray-900 font-sans">
-  <!-- Header -->
-  <header class="bg-white shadow p-6 sticky top-0">
-  <div class="max-w-4xl mx-auto flex justify-between items-center">
-    <h1 class="text-xl font-bold">Your Name</h1>
-    <nav class="space-x-4">
-      <a href="#about" class="hover:text-blue-600">About</a>
-      <a href="#experience" class="hover:text-blue-600">Experience</a>
-      <a href="#projects" class="hover:text-blue-600">Projects</a>
-      <a href="#contact" class="hover:text-blue-600">Contact</a>
-      <a href="jp.html" class="hover:text-blue-600 font-semibold">日本語</a>
-    </nav>
-  </div>
-</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-
-  <!-- Hero Section -->
-  <section class="max-w-4xl mx-auto text-center py-20">
-    <h2 class="text-4xl font-bold mb-4">Hi, I'm Your Name 👋</h2>
-    <p class="text-lg text-gray-600">Data Engineer | AWS | GCP | Python | SQL</p>
-    <a href="./assets/Suvarna_Kumar_Vikas_Resume.pdf" target="_blank" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700">Download Resume</a>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="max-w-4xl mx-auto py-12">
-    <h3 class="text-2xl font-bold mb-4">About Me</h3>
-    <p class="text-gray-700">I’m a data engineer with experience in building scalable ETL pipelines, optimizing big data workflows, and working with cloud platforms (AWS, GCP, Azure). Passionate about turning raw data into meaningful insights.</p>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="max-w-4xl mx-auto py-12">
-    <h3 class="text-2xl font-bold mb-4">Experience</h3>
-    <div class="space-y-6">
-      <div>
-        <h4 class="text-xl font-semibold">Data Engineer — Company Name</h4>
-        <p class="text-gray-600">Jan 2021 – Present</p>
-        <ul class="list-disc list-inside text-gray-700">
-          <li>Designed and maintained ETL pipelines handling millions of records.</li>
-          <li>Optimized SQL queries, reducing processing time by 40%.</li>
-          <li>Worked on AWS services: S3, Glue, Lambda, Redshift.</li>
-        </ul>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=translate" -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body class="bg-[#ECEEDF] text-gray-900 font-cs">
+    <!-- Header -->
+    <header class="bg-[#B19279] shadow p-6 sticky top-0">
+      <div class="max-w-5xl mx-auto flex justify-end">
+        <!-- <h1 class="text-xl font-bold">Your Name</h1> -->
+        <nav
+          class="text-white text-xl space-x-6 flex justify-center items-center"
+        >
+          <a
+            href="#about"
+            class="hover:text-yellow-100 transition hover:underline underline-offset-4"
+            >About</a
+          >
+          <a
+            href="#experience"
+            class="hover:text-yellow-100 transition hover:underline underline-offset-4"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="hover:text-yellow-100 transition hover:underline underline-offset-4"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-yellow-100 transition hover:underline underline-offset-4"
+            >Contact</a
+          >
+          <a
+            href="jp.html"
+            class="flex items-center gap-2 px-3 py-1 rounded bg-white text-stone-900 font-medium shadow hover:bg-yellow-100 transition"
+          >
+            <span>日本語</span>
+            <span class="material-symbols-outlined"> translate </span>
+          </a>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Projects -->
-  <section id="projects" class="max-w-4xl mx-auto py-12">
-    <h3 class="text-2xl font-bold mb-4">Projects</h3>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-4 rounded-lg shadow">
-        <h4 class="font-semibold">US EV Data – AWS ETL Project</h4>
-        <p class="text-gray-600">Built a scalable ETL pipeline using Airflow, Lambda, and PostgreSQL to analyze EV adoption trends in the US.</p>
-        <a href="https://github.com/yourusername/ev-data-etl" class="text-blue-600 hover:underline">View Project</a>
+    <!-- Hero Section -->
+    <section class="max-w-5xl mx-auto text-center py-20">
+      <div class="flex justify-between items-center content-center">
+        <div class="max-w-xl text-left">
+          <h2 class="text-5xl font-bold mb-4">
+            Hello, I'm <span class="text-[#8975B0]">Vikas.</span>
+          </h2>
+          <p class="text-xl text-stone-900">
+            <!-- <span>Data Engineer</span> | <span>AWS</span> | <span>GCP</span> |
+            <span>Python</span> | <span>SQL</span> -->
+            I’m an aspiring Data Engineer with skills in AWS, SQL, and Linux,
+            backed by a strong operations background and bilingual proficiency
+            in English and Japanese. Passionate about building smarter, faster
+            data systems that make an impact.
+          </p>
+          <a
+            href="./assets/Suvarna_Kumar_Vikas_Resume.pdf"
+            target="_blank"
+            class="mt-6 inline-block text-[#70cad1] font-bold bg-transparent border-[#70cad1] border-2 px-6 py-2 rounded shadow hover:text-white hover:bg-[#70cad1]"
+            >View Resume</a
+          >
+        </div>
+        <div>
+          <img
+            src="./assets/profile_pic.jpg"
+            width="400"
+            height="400"
+            class="rounded-lg"
+          />
+        </div>
       </div>
-      <div class="bg-white p-4 rounded-lg shadow">
-        <h4 class="font-semibold">Streaming Analytics with Flink</h4>
-        <p class="text-gray-600">Implemented real-time sessionization of web traffic data using Apache Flink + Kafka + PostgreSQL.</p>
-        <a href="https://github.com/yourusername/flink-streaming" class="text-blue-600 hover:underline">View Project</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-5xl mx-auto py-12">
+      <h3 class="text-4xl font-bold mb-4">About Me</h3>
+      <p class="text-lg text-stone-900">
+        I’m a
+        <span class="text-[#8975B0] font-bold">bilingual engineer</span>
+        with a strong foundation in
+        <span class="text-[#8975B0] font-bold">SQL, Linux, and AWS</span>, and a
+        growing passion for creating efficient, scalable data solutions that
+        make a real impact. With over 4 years of experience in application
+        development and production support, I’m now actively transitioning into
+        the field of
+        <span class="text-[#8975B0] font-bold">data engineering</span>.
+      </p>
+      <p class="text-lg text-stone-900">
+        In my current role, I investigate data issues, perform root cause
+        analysis, and resolve problems like data quality failures, missing
+        records, and event-trigger inconsistencies. I began my career building
+        business tools using C# (.NET) and gradually shifted toward
+        <span class="text-[#8975B0] font-bold"
+          >cloud and data infrastructure</span
+        >. Now, I’m eager to transition fully into hands-on data engineering
+        roles where I can automate workflows, optimize pipelines, and contribute
+        to smarter, more efficient systems.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="max-w-5xl mx-auto py-12">
+      <h3 class="text-4xl font-bold mb-4">Experience</h3>
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-xl font-semibold">
+            Data Engineer (L2 Support) — TCS Japan
+          </h4>
+          <p class="text-stone-600 italic">Oct 2024 – Present</p>
+          <ul class="list-disc list-inside text-stone-900">
+            <li>
+              Supporting a global pharmaceutical company as an L2 Data Engineer,
+              ensuring operational stability of
+              <span class="text-[#8975B0] font-bold"
+                >critical data pipelines on AWS</span
+              >.
+            </li>
+            <li>
+              Manage business-critical events such as
+              <span class="text-[#8975B0] font-bold"
+                >Person-in-Charge (PIC)</span
+              >
+              changes and product registrations, ensuring seamless integration
+              with downstream systems and business teams.
+            </li>
+            <li>
+              Collaborated with cross-functional teams to resolve data flow
+              issues and performed
+              <span class="text-[#8975B0] font-bold"
+                >in-depth root cause analysis.</span
+              >
+            </li>
+            <li>
+              Maintain and enhance operational documentation to support
+              recurring workflows, troubleshooting, escalation, and smoother
+              handoffs across teams through clear communication and knowledge
+              sharing
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold">
+            Production Support Engineer — TCS Japan
+          </h4>
+          <p class="text-stone-600 italic">Feb 2023 – Aug 2024</p>
+          <ul class="list-disc list-inside text-stone-900">
+            <li>
+              Worked with one of Japan’s top investment banks as a
+              <span class="text-[#8975B0] font-bold"
+                >Production Support Engineer</span
+              >
+              , ensuring smooth operation of mission-critical financial systems.
+            </li>
+            <li>
+              Supported and maintained over 100 applications with a focus on
+              system reliability, uptime, and issue resolution.
+            </li>
+            <li>
+              Used
+              <span class="text-[#8975B0] font-bold">Linux and SQL</span>
+              for production investigations, deployment support, and day-to-day
+              operational tasks.
+            </li>
+            <li>
+              Collaborated with development teams to
+              <span class="text-[#8975B0] font-bold"
+                >automate repetitive manual processes, boosting team
+                productivity and reducing incident frequency</span
+              >.
+            </li>
+            <li>
+              Managed incidents using
+              <span class="text-[#8975B0] font-bold">ServiceNow</span>,
+              conducting impact assessments, root cause investigations, and
+              documentation to prevent recurrence and improve service
+              continuity.
+            </li>
+            <li>
+              Proactively monitored live systems using
+              <span class="text-[#8975B0] font-bold"
+                >Grafana, Rivermuse, and Splunk</span
+              >
+              to detect anomalies, fine-tune alerts, and improve overall
+              observability.
+            </li>
+            <li>
+              Contributed to operational documentation and knowledge sharing to
+              support onboarding and improve team-wide efficiency.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold">System Engineer — TCS Japan</h4>
+          <p class="text-stone-600 italic">Jun 2022 – Jan 2023</p>
+          <ul class="list-disc list-inside text-stone-900">
+            <li>
+              Designed and developed a mobile CRUD app using
+              <span class="text-[#8975B0] font-bold"
+                >Flutter with a Node.js</span
+              >
+              backend for client demo purpose.
+            </li>
+            <li>
+              Built an e-commerce website using
+              <span class="text-[#8975B0] font-bold"
+                >Angular and Java Spring Boot</span
+              >
+            </li>
+            <li>
+              Gained hands-on experience with AWS cloud services and
+              independently learned React to build modern, responsive web app
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold">System Engineer — ITS Co.Ltd</h4>
+          <p class="text-stone-600 italic">Oct 2020 – May 2022</p>
+          <ul class="list-disc list-inside text-stone-900">
+            <li>
+              Designed and developed a Cost Estimates Tool for a client company
+              using <span class="text-[#8975B0] font-bold">C# (.NET)</span>,
+              streamlining the quotation process and improving data accuracy.
+            </li>
+            <li>
+              Participated in the design and development of a Learning Map
+              Application for a university, using
+              <span class="text-[#8975B0] font-bold">C# (.NET) and SQLite</span>
+              to visualize learning paths and track progress
+            </li>
+            <li>
+              Contributed to the development of a Data Management System to
+              support internal operations, leveraging
+              <span class="text-[#8975B0] font-bold"
+                >C# (.NET) and SQL Server.</span
+              >
+            </li>
+            <li>
+              Designed an Ingredients Management System for a food production
+              company to manage post-delivery product data
+            </li>
+            <li>
+              Designed and developed an FFU Maintenance System for an industrial
+              company, enabling efficient tracking and management of
+              ceiling-mounted units
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="max-w-4xl mx-auto py-12 text-center">
-    <h3 class="text-2xl font-bold mb-4">Get In Touch</h3>
-    <p class="text-gray-700">📧 your.email@example.com</p>
-    <p class="text-gray-700">💼 <a href="https://linkedin.com/in/yourprofile" class="text-blue-600 hover:underline">LinkedIn</a></p>
-    <p class="text-gray-700">🐙 <a href="https://github.com/yourusername" class="text-blue-600 hover:underline">GitHub</a></p>
-  </section>
+    <!-- Projects -->
+    <section id="projects" class="max-w-5xl mx-auto py-12">
+      <h3 class="text-4xl font-bold mb-4">Personal Projects</h3>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div
+          class="flex flex-col justify-between bg-white p-6 space-y-4 shadow rounded-md"
+        >
+          <div class="space-y-4">
+            <h4 class="font-bold text-lg">US EV Data – AWS ETL Project</h4>
+            <p class="text-stone-600">
+              Developed an automated AWS data pipeline leveraging
+              <span class="text-[#8975B0] font-bold"
+                >Step Functions, Lambda, and RDS</span
+              >
+              to ingest, transform, and store EV datasets for analyzing adoption
+              trends across the United States.
+            </p>
+          </div>
+          <a
+            href="https://github.com/Vikas131/Data-Engineering-Projects/tree/main/AWS-Project"
+            class="text-[#70cad1] font-bold hover:underline underline-offset-4"
+            >View Project</a
+          >
+        </div>
+        <div
+          class="flex flex-col justify-between bg-white p-6 space-y-4 shadow rounded-md"
+        >
+          <div class="space-y-4">
+            <h4 class="font-bold text-lg">Weather Data ETL project</h4>
+            <p class="text-stone-600">
+              Built an ETL pipeline using
+              <span class="text-[#8975B0] font-bold"
+                >Airflow, DBT, and PostgreSQL</span
+              >
+              to ingest, transform, and load data, containerized with
+              <span class="text-[#8975B0] font-bold">Docker</span>, and used
+              <span class="text-[#8975B0] font-bold">Superset</span> to
+              visualize and analyze the results.
+            </p>
+          </div>
+          <a
+            href="https://github.com/Vikas131/Data-Engineering-Projects/tree/main/Weather_data_ETL_project"
+            class="text-[#70cad1] font-bold hover:underline underline-offset-4"
+            >View Project</a
+          >
+        </div>
+        <div class="bg-white p-6 space-y-4 shadow rounded-md">
+          <h4 class="font-bold text-lg">Data Analysis Projects</h4>
+          <p class="text-stone-600">
+            Developed three projects — Stock Analysis, Movie Data Analysis, and
+            Sales Data Analysis — using
+            <span class="text-[#8975B0] font-bold"
+              >Python, Pandas, Matplotlib, Seaborn, and Plotly</span
+            >. Leveraged APIs (e.g., Yahoo Finance) to collect real-time data
+            and extract actionable insights through analysis and visualization.
+          </p>
+          <a
+            href="https://github.com/Vikas131/Data_Analysis/tree/main/Python_Data_Analysis_Projects"
+            class="text-[#70cad1] font-bold hover:underline underline-offset-4"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
 
-  <footer class="bg-gray-100 py-6 text-center text-gray-600 mt-12">
-    © 2025 Your Name. All rights reserved.
-  </footer>
-</body>
+    <!-- Certfications -->
+    <section id="experience" class="max-w-5xl mx-auto py-12">
+      <h3 class="text-4xl font-bold mb-4">Certfications</h3>
+      <div class="space-y-6">
+        <div>
+          <ul class="list-disc list-inside text-stone-900 text-l">
+            <li>
+              <span class="font-semibold">Data Engineering- DataExpert.io </span
+              >(August 2025)
+            </li>
+            <li>
+              <span class="font-semibold">AWS Cloud Practitioner </span>(April
+              2025)
+            </li>
+            <li>
+              <span class="font-semibold"
+                >Red Hat Certified System Administrator (RHCSA) </span
+              >(July 2023)
+            </li>
+            <li>
+              <span class="font-semibold">JLPT N2 Certified </span>(June 2021)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="experience" class="max-w-5xl mx-auto py-12">
+      <h3 class="text-4xl font-bold mb-4">Skills</h3>
+      <div class="space-y-6">
+        <div>
+          <ul class="list-disc list-inside text-stone-900">
+            <li>
+              <span class="font-semibold">Cloud & Data Tools:</span> AWS Glue,
+              Lambda, Step Functions, RDS, S3
+            </li>
+            <li>
+              <span class="font-semibold">Programming & Query Languages:</span>
+              Python, SQL (PostgreSQL, Oracle, MS SQL Server), Bash
+            </li>
+            <li>
+              <span class="font-semibold">Platforms & Monitoring Tools:</span>
+              Linux, Grafana, Splunk, ServiceNow
+            </li>
+            <li><span class="font-semibold">Others:</span> Git, JIRA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-5xl mx-auto py-12">
+      <h3 class="text-4xl font-bold mb-4">Get in touch</h3>
+      <div class="">
+        <div>
+          <ul class="text-stone-900 space-y-4">
+            <li class="text-xl flex items-center">
+              <!-- <span class="material-symbols-outlined pr-2"> mail </span> -->
+              <!-- <p class="pr-2 font-semibold">Email:</p> -->
+              📧
+              <a class="text-[#70cad1] font-semibold hover:underline pl-1">
+                vikassuvarna13@gmail.com</a
+              >
+            </li>
+            <li class="text-xl">
+              💼
+              <a
+                href="https://www.linkedin.com/in/vikas-suvarna-kumar/"
+                class="text-[#70cad1] font-semibold hover:underline"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="text-xl">
+              🐙
+              <a
+                href="https://github.com/Vikas131"
+                class="text-[#70cad1] font-semibold hover:underline"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-yellow-100 py-6 text-center text-stone-900 text-lg font-bold mt-12 shadow"
+    >
+      © 2025 Vikas. All rights reserved.
+    </footer>
+  </body>
 </html>
