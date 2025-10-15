@@ -1,1 +1,1 @@
-![Profile view counter on GitHub](https://vikas131.github.io/ghpvc/?username=vikas131)
+![Profile views](https://komarev.com/ghpvc/?username=vikas131&color=blue)
